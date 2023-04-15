@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(https://images7.alphacoders.com/531/thumb-1920-531424.jpg);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header{
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent
+    box-shadow: 2px 2px 20px black;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.navigation a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 22px;
+    font-size: 20px;
+    font-family:sans-serif;
+    margin-right: -20px;
+}
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -1px;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0); 
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    box-shadow: 2px 2px 20px black;
+}
+.btnlogin-popup{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border-style: solid;
+    border-color: darkblue;
+    color: white;
+    background: transparent;
+    transition: background-color .7s;
+    margin-left: 25px;
+    transition: transform .2s;
+    box-shadow: 2px 2px 8px black;
+}
+.btnlogin-popup:hover{
+    transform: translateY(-1px);
+    background-color: darkblue;
+    cursor: pointer;
+}
+.wrapper{
+    position: relative;
+    min-height: 70vh;
+    margin-top: 50px;
+    width: 430px;
+    border-style: 2px solid;
+    background: transparent;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px;
+    transform: scale(0);
+    transition: transform .5s ease;  
+    overflow: hidden;
+}
+.wrapper.active-popup{
+    transform: scale(1);   
+}
+.wrapper.active{
+    height: 500px;
+}
+.wrapper .form-box{
+    width: 100%;
+    padding: 50px;
+}
+/*wrapper.form-box.login{
+    width:100%;
+    padding: 100px;
+}*/
+.form-box.login h2{
+    text-align: center;
+    font-size: 2em;
+    color: black;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-2px);
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    pointer-events: none; 
+    transition: top .2s;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input-box .icon{
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em;
+    color: black;
+    margin-top: 10px;
+}
+.remembercheckbox{
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    margin: -10px 0 15px; 
+    display: flex;
+    justify-content: space-between;
+}
+.remembercheckbox label input{
+    accent-color: black;
+    margin-right: 5px;
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    background: #162938; 
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+    border-radius: 10px;  
+    transition:  transform .2s;
+    transition: background-color .2s;
+}
+.btn:hover{
+    transform: translateY(-2px);
+    background-color: darkblue;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 60px;
+    height: 50px;
+    font-size: 40px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    transition: transform .2s;
+}
+.wrapper .icon-close:hover{
+    transform: translateY(-1px);
+    cursor: pointer;
+
+}
+.login-register{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    transition: transform .2s;
+    font-family: sans-serif;
+}
+#a{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+
+#c{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+}
+#d{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+#e{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+#f{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+#g{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+#h{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+#i{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+}
+option ,.ajay{
+  padding: 10px 7px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border-style: solid;
+    border-color: darkblue;
+    margin-left: 10px;
+    color: white;
+    background: transparent;
+    transition: background-color .10s;
+    transition: transform .2s;
+    box-shadow: 2px 2px 8px black;
+}
+option,.ajay:hover{
+     transform: translateY(-1px);
+    background-color: blue;
+    cursor: pointer;
+}
+.change-image{
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    border-style: solid;
+    border-color: darkblue;
+    margin-left: 10px;
+    margin-right: -60px;
+    color: white;
+    background: transparent;
+    transition: background-color .10s;
+    transition: transform .2s;
+    box-shadow: 2px 2px 8px black;
+}
+.change-image:hover{
+      transform: translateY(-1px);
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+

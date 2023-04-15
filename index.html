@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Login page Project</title>
+    <link rel="stylesheet" href="loginpage.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    <header>
+        <h1 class="logo">Login</h1>
+    <nav class="navigation">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Information</a>
+        <a href="https://www.instagram.com/_ajay_kusekar_/" target="window2"><span class="insta"><ion-icon name="logo-instagram"></ion-icon></span>
+        </a>
+<a href="https://www.facebook.com/ajay.kusekar" target="window2"><ion-icon name="logo-facebook"></ion-icon></a>
+<a href="https://twitter.com/ajay_kusekar" target="window2"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://github.com/AjayKusekar" target="window2"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/ajay-kusekar-6b748b22a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bd2mc6z%2FARRWYTVoVSQBqOQ%3D%3D" target="window2"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <button class="btnlogin-popup"><b>LOGIN</b></button>
+        
+        <!--select tag-->
+        <select class="ajay" name="choose color">
+            <option value="background image" id="bi">Background Image</option>
+        <option value="Default" id="a">Default</option>
+    <option value="Ironman" id="c">Ironman</option>
+        <option value="Hulk" id="d">Hulk</option>
+        <option value="Deadpool" id="e">Deadpool</option>
+        <option value="Captain America" id="f">Captain America</option>
+        <option value="Dr.Strange" id="g">Dr.Strange</option>
+        <option value="Black Panther" id="h">Black Panther</option>
+            <option value="Spiderman" id="i">Spiderman</option>
+    </select>
+        <button id="change" type="button" onclick="changecolor()" class="change-image">change</button>
+        
+        <!--select tag finish-->
+        
+    </nav>
+    </header>
+    <center>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-circle-outline"></ion-icon></span>
+        <div class="form-box login">
+            <h2><b>LOGIN PAGE</b></h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+        <input type="email" required>
+                <label>E-mail</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+        <input type="password" required><label>password</label>
+            </div>
+            <div class="remembercheckbox">
+                <label><input type="checkbox" required>Remember Me</label>
+                <a href="#"><b>Forgot Password ?</b></a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            
+            <div class="login-register">
+                <p>Don't have an account?
+                    <a href="#" class="register-link">Register</a></p>
+            </div>
+            </form>
+        </div>    
+        </div>
+    </center>
+</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="loginpage.js"></script>
+</html>
